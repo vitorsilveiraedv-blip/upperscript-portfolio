@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A selection of web development, automation and interface projects.">
+  <meta name="theme-color" content="#101411">
+  <title>UpPerScript | Digital experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <script type="module" src="src/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="UpPerScript home"><span class="brand-mark">U<span>+</span></span><span>UPPERSCRIPT</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <p class="eyebrow"><span class="status-dot"></span> INDEPENDENT WEB DEVELOPMENT</p>
+      <h1>Thoughtful code.<br><span>Useful experiences.</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-copy">I build clean, responsive digital experiences that make complex things feel simple. From first sketch to the final interaction.</p>
+        <a class="round-link" href="#work" aria-label="Explore selected work">↓</a>
+      </div>
+      <div class="hero-meta"><span>DESIGN-LED DEVELOPMENT</span><span>WEB · AUTOMATION · UX</span><span>AVAILABLE FOR PROJECTS</span></div>
+    </section>
+
+    <section id="work" class="work-section section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Built to work.<br><span>Made to matter.</span></h2></div><p class="section-note">A small collection of concepts and practical builds, focused on clarity, performance and detail.</p></div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All work <span>04</span></button>
+        <button class="filter-btn" data-filter="web" aria-pressed="false">Web design</button>
+        <button class="filter-btn" data-filter="tools" aria-pressed="false">Tools & automation</button>
+      </div>
+      <div id="project-grid" class="project-grid">
+        <article class="project-card" data-category="web"><div class="project-visual visual-one"><span class="visual-label">01 / COMMERCE</span><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-content"><b>Objects for<br>everyday living.</b><span></span><span></span></div></div></div><div class="project-info"><div><h3>Forma Studio</h3><p>Editorial storefront concept · Responsive UI</p></div><span class="project-index">WEB / 2025</span></div></article>
+        <article class="project-card" data-category="tools"><div class="project-visual visual-two"><span class="visual-label">02 / OPERATIONS</span><div class="dashboard"><div class="dash-side"></div><div class="dash-main"><span></span><span></span><div class="dash-chart"></div></div></div></div><div class="project-info"><div><h3>Flowboard</h3><p>Workflow dashboard · Data visualization concept</p></div><span class="project-index">TOOLS / 2025</span></div></article>
+        <article class="project-card" data-category="web"><div class="project-visual visual-three"><span class="visual-label">03 / PORTFOLIO</span><div class="type-poster">MAKE<br><em>IT</em><br>MATTER<span>CREATIVE DEVELOPMENT / 2025</span></div></div><div class="project-info"><div><h3>Northside Creative</h3><p>Studio website · Motion-led visual direction</p></div><span class="project-index">WEB / 2025</span></div></article>
+        <article class="project-card" data-category="tools"><div class="project-visual visual-four"><span class="visual-label">04 / AUTOMATION</span><div class="automation-art"><div>INPUT <b>CSV</b></div><span>→</span><div>PROCESS <b>✓</b></div><span>→</span><div>OUTPUT <b>JSON</b></div></div></div><div class="project-info"><div><h3>OrderFlow</h3><p>Data validation · Python automation concept</p></div><span class="project-index">TOOLS / 2026</span></div></article>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>No projects in this category yet.</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="section-wrap about-grid"><div><p class="eyebrow">02 / APPROACH</p><h2>Good digital work<br>is <span>felt, not forced.</span></h2></div><div class="about-copy"><p>I care about the details people notice and the ones they don't: accessible structure, responsive layouts, thoughtful interactions and code that's easy to maintain.</p><div class="capabilities"><span>FRONTEND DEVELOPMENT</span><span>RESPONSIVE DESIGN</span><span>API INTEGRATION</span><span>PROCESS AUTOMATION</span><span>QUALITY & TESTING</span></div></div></div>
+    </section>
+
+    <section class="github-section section-wrap"><div><p class="eyebrow">03 / OPEN SOURCE</p><h2>More than a pretty<br><span>interface.</span></h2><p class="section-note">Explore public repositories and recent work through the GitHub API.</p></div><div class="github-panel"><div class="github-panel-head"><span>GITHUB / PUBLIC REPOSITORIES</span><span class="live-dot">LIVE DATA</span></div><div id="github-status" class="github-status" aria-live="polite">Loading public repositories…</div><ul id="github-repos" class="repo-list"></ul><a class="text-link" href="https://github.com/" target="_blank" rel="noreferrer">Explore on GitHub ↗</a></div></section>
+
+    <section id="contact" class="contact-section"><div class="section-wrap contact-inner"><p class="eyebrow">04 / GET IN TOUCH</p><h2>Have a good<br><span>problem to solve?</span></h2><div class="contact-bottom"><p>Tell me what you're building. Let's make it clearer, faster and more useful.</p><form id="contact-form" novalidate><label for="email">YOUR EMAIL</label><div class="email-field"><input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email"><button type="submit" aria-label="Submit email">↗</button></div><p id="form-message" class="form-message" aria-live="polite">This demo validates your email locally and does not send data.</p></form></div></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">U<span>+</span></span><span>UPPERSCRIPT</span></a><span>BUILT WITH INTENTION · <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+</body>
+</html>
