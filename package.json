@@ -1,0 +1,14 @@
+{
+  "name": "upperscript-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A responsive portfolio demonstrating frontend fundamentals, API integration, accessibility and testing.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
